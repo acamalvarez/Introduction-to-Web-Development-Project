@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+	
+	
+<link rel="stylesheet" type"text/CSS" href="finalForm.CSS">
+
+<script type="text/JavaScript" src="finalForm.js">
+
+</script>
+
+</head>
+
+<body onload="newStudent();">
+
+    <h1>Student grades</h1>
+
+    <img src="school.svg">
+
+<form action="mySubmitPage.html" onsubmit="return validateForm();">
+
+    <table>
+
+        <tr>
+            <td class="title">Information</td>
+            <td class="title">Value</td>
+            <td class="title"></td>
+
+        </tr>
+        <tr>
+            <td>Registration number</td>
+            <td><input class="input_col" id="reg_number" type="number" placeholder="xxxxxxx" onblur="validateNumber();" required></td>
+            <td><span class="feedback_col" id="reg_number_prompt"></span></td>
+        </tr>
+        <tr>
+            <td>Mid-term 1</td>
+            <td><input class="input_col" id="midterm1" type="number" min="0" max="5" value="0.0" step="0.1" onblur="validateMidTerm1();"></td>
+            <td><span class="feedback_col" id="midterm1_prompt"></span></td>
+        </tr>
+        <tr>
+            <td>Mid-term 2</td>
+            <td><input class="input_col" id="midterm2" type="number" min="0" max="5" value="0.0" step="0.1" onblur="validateMidTerm2();"></td>
+            <td><span class="feedback_col" id="midterm2_prompt"></span></td>
+        </tr>
+        <tr>
+            <td>Assignment</td>
+            <td><input class="input_col" id="assignment" type="number" min="0" max="5" value="0.0" step="0.1" onblur="validateAssignment();"></td>
+            <td><span class="feedback_col" id="assignment_prompt"></span></td>
+        </tr>
+        <tr>
+            <td>Final</td>
+            <td><input class="input_col" id="final" type="number" min="0" max="5" value="0.0" step="0.1" onblur="validateFinal();"></td>
+            <td><span class="feedback_col" id="final_prompt"></span></td>
+        </tr>
+        <tr>
+            <td>Assignment Date</td>
+            <td><input id="assignment_date" type="date"></td>
+            <td><span class="date">due on 01/07/2020</span></td>
+        </tr>
+        <tr>
+            <td>Attend all lectures?</td>
+            <td><input type="checkbox" id="lectures"></td>
+            <td><span class="feedback_col"></span></td>
+        </tr>
+        <tr>
+            <td>Make the presentation?</td>
+            <td><input type="checkbox" id="presentation"></td>
+            <td><span class="feedback_col"></span></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="Calculate" onclick="calcGrade();"></td>
+            <td><input type="submit" value="Submit"></td>
+        </tr>
+
+    </table>
+	<span id="grade" class="grade" type="number" span="0.01"></span>
+</form>
+
+<br>
+<!-- <div>
+    Icon made by <a href="https://www.flaticon.com/authors/iconixar" title="iconixar">iconixar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+</div> -->
+</body>
+
+
+</html>

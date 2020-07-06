@@ -1,0 +1,38 @@
+form {
+	margin: auto;
+}
+
+table {
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+img {
+	width: 100px;
+}
+
+.title {
+	font-weight: bold;
+	font-size: large;
+}
+
+.input_col {
+    width: 100px;
+}
+
+.buttonBG {
+	background-color: lightGray;
+	border-radius: 5px;
+    padding: 3px;
+	font-weight: bold;
+	vertical-align: left;
+}
+
+.Button {
+	margin: auto;
+	text-align: center;
+}
+
+.grade {
+    font-size: 200%;
+}
